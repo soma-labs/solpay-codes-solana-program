@@ -1,3 +1,3 @@
 ## solpay.codes Solana program
 
-### WIP
+### https://docs.solpay.store/
