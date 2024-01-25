@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+    node:
+        build: .
+        volumes:
+            - ./solpay-codes:/home/node/solpay-codes
+        command: tail -f /dev/null
+        ports:
+            - "8898:8899"
+        networks:
+            - solana-dev
+networks:
+    solana-dev:
+        driver: bridge
+volumes:
+    solpay-codes:
+        driver: local
